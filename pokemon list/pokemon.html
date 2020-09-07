@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon List</title>
+    <link href="./pokemon.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <button class="navbartoggle" onclick="toggle_navbar()">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbarcontents">
+        <a href="../index.html" class="navbar_link">Home</a>
+        <a href="./pokemon.html" class="navbar_link">Pokemon</a>
+        <a href="../moves/moves.html" class="navbar_link">Moves</a>
+        <a href="../types/types.html" class="navbar_link">Types</a>
+        <a href="../about/about.html" class="navbar_link">About</a>
+      </div>
+    </div>
+    <section class="main">
+      <div class="heading">
+        <h1>Pokemon List</h1>
+        <p>
+          Below is a list of Pokemon whose information is documented on this
+          site. (Sorted alphabetically + National #)
+          <br />
+          Clicking on a Pokemon will take you to their page.
+          <br />
+          <br />
+          More Pokemon will be added to this list gradually.
+        </p>
+      </div>
+      <hr />
+      <div id="H">
+        <h3>H</h3>
+        <ul>
+          <li>
+            <a href="../pokemon/612 Haxorus/Haxorus.html">Haxorus (#612)</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div id="M">
+        <h3>M</h3>
+        <ul>
+          <li>
+            <a href="../pokemon/648 Meloetta/Meloetta.html">Meloetta (#648)</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div id="W">
+        <h3>W</h3>
+        <ul>
+          <li>
+            <a href="../pokemon/320 Wailmer/Wailmer.html">Wailmer (#320)</a>
+          </li>
+          <li>
+            <a href="../pokemon/321 Wailord/Wailord.html">Wailord (#321)</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script>
+    function toggle_navbar() {
+      document
+        .querySelector(".navbarcontents")
+        .classList.toggle("navbarcontents_visible");
+    }
+  </script>
+</html>

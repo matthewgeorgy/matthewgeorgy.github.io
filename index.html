@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+    <link href="./home.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <button class="navbartoggle" onclick="toggle_navbar()">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbarcontents">
+        <a href="./index.html" class="navbar_link">Home</a>
+        <a href="./pokemon list/pokemon.html" class="navbar_link">Pokemon</a>
+        <a href="./moves/moves.html" class="navbar_link">Moves</a>
+        <a href="./types/types.html" class="navbar_link">Types</a>
+        <a href="./about/about.html" class="navbar_link">About</a>
+      </div>
+    </div>
+    <section class="main">
+      <div class="intro">
+        <h1>Welcome to Matthew Georgy's Pokemon Encyclopedia!</h1>
+        <div class="intro_paragraph">
+          <p>
+            On this page, you will find information about some of my favourite
+            Pokemon!
+            <br />
+            Simply click the button in the top-left corner to get started!
+            <br />
+
+            <br />
+            You can find information about these Pokemon including base stats,
+            <br />
+            game locations, types, Pokedex Entries, and Learnsets.
+            <br />
+            You can also find specific information regarding moves and types.
+            <br />
+            The information on this site is specific to Generation 5, meaning
+            that
+            <br />
+            all of the information displayed on this site is according to the
+            <br />
+            Generation 5 games.
+          </p>
+          <p>
+            If you want to learn more about me, who I am, and what I do, go to
+            the
+            <br />
+            "About" page, which can be found on the Navigation bar.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggle_navbar() {
+        document
+          .querySelector(".navbarcontents")
+          .classList.toggle("navbarcontents_visible");
+      }
+    </script>
+  </body>
+</html>

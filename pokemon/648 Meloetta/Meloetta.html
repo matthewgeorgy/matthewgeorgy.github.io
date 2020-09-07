@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meloetta</title>
+    <link href="./Meloetta.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <button class="navbartoggle" onclick="toggle_navbar()">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbarcontents">
+        <a href="../home/home.html" class="navbar_link">Home</a>
+        <a href="../../pokemon list/pokemon.html" class="navbar_link"
+          >Pokemon</a
+        >
+        <a href="./moves.html" class="navbar_link">Moves</a>
+        <a href="../types/types.html" class="navbar_link">Types</a>
+        <a href="../about/about.html" class="navbar_link">About</a>
+      </div>
+    </div>
+    <section class="main2">
+      <h1 class="Name">Meloetta (#648)</h1>
+
+      <section class="Contents">
+        <h3>Contents</h3>
+        <ol>
+          <li>Introduction</li>
+          <li>Pokedex Entry</li>
+          <li>Game Locations</li>
+          <li>Learnset</li>
+        </ol>
+      </section>
+
+      <section class="Info-Container">
+        <figure class="sprites">
+          <img class="sprite1" src="../../resources/meloetta_a.png" />
+          <img class="s-sprite1" src="../../resources/meloetta_a_s.png" />
+          <img class="sprite2" src="../../resources/meloetta_p.png" />
+          <img class="s-sprite2" src="../../resources/meloetta_p_s.png" />
+
+          <audio id="Cry" controls>
+            <source src="https://veekun.com/dex/media/pokemon/cries/648.ogg" />
+          </audio>
+        </figure>
+        <hr />
+        <div class="Abilities">
+          <h3>Abilities</h3>
+          <ul>
+            <li><i>Serene Grace</i></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="Type-Matchups">
+          <h4>Type Matchups</h4>
+          <p>
+            <i>Aria Forme</i>
+            <br />
+            <b>Weaknesses</b>: <span class="Bug">Bug</span> (2x),
+            <span class="Dark">Dark</span> (2x),
+            <br />
+            <b>Resistances</b>: <span class="Psychic">Psychic</span> (½x)
+            <br />
+            <b>Immunities</b>: <span class="Ghost">Ghost</span> (0x)
+          </p>
+          <p>
+            <i>Pirouette Forme</i>
+            <br />
+            <b>Weaknesses</b>: <span class="Fighting">Fighting</span> (2x),
+            <span class="Flying">Flying</span> (2x),
+            <span class="Psychic">Psychic</span> (2x)
+            <br />
+            <b>Resistances</b>: <span class="Bug">Bug</span> (½x),
+            <span class="Dark">Dark</span> (½x),
+            <span class="Rock">Rock</span> (½x)
+            <br />
+            <b>Immunities</b>: <span class="Ghost">Ghost</span> (0x)
+          </p>
+          <p>
+            <b>NOTE</b>: in either Forme, if the Pokemon is given a Ring Target,
+            the effectiveness of <span class="Ghost">Ghost</span> is 2x.
+          </p>
+        </div>
+        <hr />
+        <h3>Base Stats</h3>
+
+        <h3>Aria Forme</h3>
+        <table class="Base-Stats">
+          <thead>
+            <tr>
+              <th>LVL</th>
+              <th>HP</th>
+              <th>Attack</th>
+              <th>Defense</th>
+              <th>Sp. Atk</th>
+              <th>Sp. Def</th>
+              <th>Speed</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="LVL0">
+              <td class="lvl">0</td>
+              <td class="hp">100</td>
+              <td class="atk">77</td>
+              <td class="def">77</td>
+              <td class="sp-atk">128</td>
+              <td class="sp-def">128</td>
+              <td class="spe">90</td>
+              <td class="tot">600</td>
+            </tr>
+            <tr id="LVL50">
+              <td class="lvl">50</td>
+              <td class="hp">160-207</td>
+              <td class="atk">73-141</td>
+              <td class="def">73-141</td>
+              <td class="sp-atk">119-198</td>
+              <td class="sp-def">119-198</td>
+              <td class="spe">85-156</td>
+              <td class="tot">600</td>
+            </tr>
+            <tr id="LVL100">
+              <td class="lvl">100</td>
+              <td class="hp">310-404</td>
+              <td class="atk">143-278</td>
+              <td class="def">143-278</td>
+              <td class="sp-atk">234-390</td>
+              <td class="sp-def">234-390</td>
+              <td class="spe">166-306</td>
+              <td class="tot">600</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Pirouette Forme</h3>
+        <table class="Base-Stats">
+          <thead>
+            <tr>
+              <th>LVL</th>
+              <th>HP</th>
+              <th>Attack</th>
+              <th>Defense</th>
+              <th>Sp. Atk</th>
+              <th>Sp. Def</th>
+              <th>Speed</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="LVL0">
+              <td class="lvl">0</td>
+              <td class="hp">100</td>
+              <td class="atk">128</td>
+              <td class="def">90</td>
+              <td class="sp-atk">77</td>
+              <td class="sp-def">77</td>
+              <td class="spe">128</td>
+              <td class="tot">600</td>
+            </tr>
+            <tr id="LVL50">
+              <td class="lvl">50</td>
+              <td class="hp">160-207</td>
+              <td class="atk">119-198</td>
+              <td class="def">85-156</td>
+              <td class="sp-atk">73-141</td>
+              <td class="sp-def">73-141</td>
+              <td class="spe">119-198</td>
+              <td class="tot">600</td>
+            </tr>
+            <tr id="LVL100">
+              <td class="lvl">100</td>
+              <td class="hp">310-404</td>
+              <td class="atk">234-390</td>
+              <td class="def">166-306</td>
+              <td class="sp-atk">143-278</td>
+              <td class="sp-def">143-278</td>
+              <td class="spe">234-390</td>
+              <td class="tot">600</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="Intro">
+        <p id="Description">
+          Meloetta is a dual-type <span class="Normal">Normal</span>/<span
+            class="Psychic"
+            >Psychic</span
+          >
+          Mythical Pokémon introduced in Generation V.
+          <br />
+          While it is not known to evolve into or from any Pokémon, Meloetta has
+          a second Forme activated by using the move Relic Song in battle. Its
+          original Forme, <b>Aria Forme</b> (top sprites), will then become the
+          <span class="Normal">Normal</span>/<span class="Fighting"
+            >Fighting</span
+          >-Type <b>Pirouette Forme</b> (bottom sprites).
+        </p>
+        <hr />
+      </section>
+
+      <section class="body">
+        <section id="Pokedex-Entry">
+          <h1 class="heading">Pokédex Entry</h1>
+
+          <table class="Dex-Entry">
+            <tbody>
+              <tr>
+                <td class="black">Black</td>
+                <td class="entryDE">
+                  Its melodies are sung with a special vocalization method that
+                  can control the feelings of those who hear it.
+                </td>
+              </tr>
+              <tr>
+                <td class="white">White</td>
+                <td class="entryDE">
+                  Many famous songs have been inspired by the melodies that
+                  Meloetta plays.
+                </td>
+              </tr>
+              <tr>
+                <td class="black">Black 2</td>
+                <td class="entryDE" rowspan="2">
+                  The melodies sung by Meloetta have the power to make Pokémon
+                  that hear them happy or sad.
+                </td>
+              </tr>
+              <tr>
+                <td class="white">White 2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+        </section>
+
+        <section id="Game-Locations">
+          <h2 class="heading">Game Locations</h2>
+
+          <table class="Game-Locations">
+            <tbody>
+              <tr>
+                <td class="black">Black</td>
+                <td class="entryGL" rowspan="2">Event</td>
+              </tr>
+              <tr>
+                <td class="white">White</td>
+              </tr>
+              <tr>
+                <td class="black">Black 2</td>
+                <td class="entryGL" rowspan="2">Event</td>
+              </tr>
+              <tr>
+                <td class="white">White 2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+        </section>
+      </section>
+
+      <section id="Learnset">
+        <h2 class="heading">Learnset</h2>
+
+        <table id="Learnset-LVL">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Move</th>
+              <th>Type</th>
+              <th>Cat.</th>
+              <th>Pwr.</th>
+              <th>Acc.</th>
+              <th>PP</th>
+            </tr>
+          </thead>
+          <tbody id="MovesLVL">
+            <tr id="Round">
+              <td>1</td>
+              <td>Round</td>
+              <td>Normal</td>
+              <td>Special</td>
+              <td>60</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Quick-Attack">
+              <td>6</td>
+              <td>Quick Attack</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>40</td>
+              <td>100%</td>
+              <td>30</td>
+            </tr>
+            <tr id="Confusion">
+              <td>11</td>
+              <td>Confusion</td>
+              <td>Psychic</td>
+              <td>Special</td>
+              <td>50</td>
+              <td>100%</td>
+              <td>25</td>
+            </tr>
+            <tr id="Sing">
+              <td>16</td>
+              <td>Sing</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>55%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Teeter-Dance">
+              <td>21</td>
+              <td>Teeter Dance</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Acrobatics">
+              <td>26</td>
+              <td>Acrobatics</td>
+              <td>Flying</td>
+              <td>Physical</td>
+              <td>55</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Psybeam">
+              <td>31</td>
+              <td>Psybeam</td>
+              <td>Psychic</td>
+              <td>Special</td>
+              <td>65</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Echoed-Voice">
+              <td>36</td>
+              <td>Echoed Voice</td>
+              <td>Normal</td>
+              <td>Special</td>
+              <td>40</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="U-turn">
+              <td>43</td>
+              <td>U-turn</td>
+              <td>Bug</td>
+              <td>Physical</td>
+              <td>70</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Wake-Up-Slap">
+              <td>50</td>
+              <td>Wake-Up Slap</td>
+              <td>Fighting</td>
+              <td>Physical</td>
+              <td>60</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Psychic">
+              <td>57</td>
+              <td>Psychic</td>
+              <td>Psychic</td>
+              <td>Special</td>
+              <td>90</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Hyper-Voice">
+              <td>64</td>
+              <td>Hyper Voice</td>
+              <td>Normal</td>
+              <td>Special</td>
+              <td>90</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Role-Play">
+              <td>71</td>
+              <td>Role Play</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Close-Combat">
+              <td>78</td>
+              <td>Close Combat</td>
+              <td>Fighting</td>
+              <td>Physical</td>
+              <td>120</td>
+              <td>100%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Perish-Song">
+              <td>85</td>
+              <td>Perish Song</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="Learnset-TMHM">
+          <thead>
+            <tr>
+              <th></th>
+              <th>TM</th>
+              <th>Move</th>
+              <th>Type</th>
+              <th>Cat.</th>
+              <th>Pwr.</th>
+              <th>Acc.</th>
+              <th>PP</th>
+            </tr>
+          </thead>
+          <tbody id="MovesTM/HM">
+            <tr id="Hone-Claws">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/38/Bag_TM_Dark_Sprite.png"
+                />
+              </td>
+              <td>TM01</td>
+              <td>Hone Claws</td>
+              <td>Dark</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Psyshock">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM03</td>
+              <td>Psyshock</td>
+              <td>Psychic</td>
+              <td>Special</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Calm-Mind">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM04</td>
+              <td>Calm Mind</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Toxic">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/38/Bag_TM_Poison_Sprite.png"
+                />
+              </td>
+              <td>TM06</td>
+              <td>Toxic</td>
+              <td>Poison</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>90%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Hidden-Power">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM10</td>
+              <td>Hidden Power</td>
+              <td>???</td>
+              <td>Special</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Sunny-Day">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/6/6b/Bag_TM_Fire_Sprite.png"
+                />
+              </td>
+              <td>TM11</td>
+              <td>Sunny Day</td>
+              <td>Fire</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Hyper-Beam">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM15</td>
+              <td>Hyper Beam</td>
+              <td>Normal</td>
+              <td>Special</td>
+              <td>150</td>
+              <td>90%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Light-Screen">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM16</td>
+              <td>Light Screen</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>30</td>
+            </tr>
+            <tr id="Protect">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM17</td>
+              <td>Protect</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Rain-Dance">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/f/f8/Bag_TM_Water_Sprite.png"
+                />
+              </td>
+              <td>TM18</td>
+              <td>Rain Dance</td>
+              <td>Water</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Telekinesis">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM19</td>
+              <td>Telekinesis</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Safeguard">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM20</td>
+              <td>Safeguard</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>25</td>
+            </tr>
+            <tr id="Frustration">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM21</td>
+              <td>Frustration</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Thunderbolt">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/5/57/Bag_TM_Electric_Sprite.png"
+                />
+              </td>
+              <td>TM24</td>
+              <td>Thunderbolt</td>
+              <td>Electric</td>
+              <td>Special</td>
+              <td>95</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Thunder">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/5/57/Bag_TM_Electric_Sprite.png"
+                />
+              </td>
+              <td>TM25</td>
+              <td>Thunder</td>
+              <td>Electric</td>
+              <td>Special</td>
+              <td>120</td>
+              <td>70%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Return">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM27</td>
+              <td>Return</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Psychic">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM29</td>
+              <td>Psychic</td>
+              <td>Dark</td>
+              <td>Status</td>
+              <td>90</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Shadow-Ball">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/2/26/Bag_TM_Ghost_Sprite.png"
+                />
+              </td>
+              <td>TM30</td>
+              <td>Shadow Ball</td>
+              <td>Ghost</td>
+              <td>Special</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Brick-Break">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/6/64/Bag_TM_Fighting_Sprite.png"
+                />
+              </td>
+              <td>TM31</td>
+              <td>Brick Break</td>
+              <td>Fighting</td>
+              <td>Physical</td>
+              <td>75</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Double-Team">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM32</td>
+              <td>Double Team</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Facade">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM42</td>
+              <td>Facade</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>70</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Rest">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM44</td>
+              <td>Rest</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Low-Sweep">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/6/64/Bag_TM_Fighting_Sprite.png"
+                />
+              </td>
+              <td>TM47</td>
+              <td>Low Sweep</td>
+              <td>Fighting</td>
+              <td>Physical</td>
+              <td>60</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Round">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM48</td>
+              <td>Round</td>
+              <td>Normal</td>
+              <td>Special</td>
+              <td>60</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Echoed-Voice">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM49</td>
+              <td>Echoed Voice</td>
+              <td>Water</td>
+              <td>Status</td>
+              <td>40</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Focus-Blast">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/6/64/Bag_TM_Fighting_Sprite.png"
+                />
+              </td>
+              <td>TM52</td>
+              <td>Focus Blast</td>
+              <td>Fighting</td>
+              <td>Special</td>
+              <td>120</td>
+              <td>70%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Energy-Ball">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/35/Bag_TM_Grass_Sprite.png"
+                />
+              </td>
+              <td>TM53</td>
+              <td>Energy Ball</td>
+              <td>Grass</td>
+              <td>Special</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Fling">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/38/Bag_TM_Dark_Sprite.png"
+                />
+              </td>
+              <td>TM56</td>
+              <td>Fling</td>
+              <td>Dark</td>
+              <td>Physical</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Charge-Beam">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/5/57/Bag_TM_Electric_Sprite.png"
+                />
+              </td>
+              <td>TM57</td>
+              <td>Charge Beam</td>
+              <td>Electric</td>
+              <td>Special</td>
+              <td>50</td>
+              <td>90%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Acrobatics">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/7/73/Bag_TM_Flying_Sprite.png"
+                />
+              </td>
+              <td>TM62</td>
+              <td>Acrobatics</td>
+              <td>Flying</td>
+              <td>Physical</td>
+              <td>55</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Embargo">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/38/Bag_TM_Dark_Sprite.png"
+                />
+              </td>
+              <td>TM63</td>
+              <td>Embargo</td>
+              <td>Dark</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Payback">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/38/Bag_TM_Dark_Sprite.png"
+                />
+              </td>
+              <td>TM66</td>
+              <td>Payback</td>
+              <td>Dark</td>
+              <td>Physical</td>
+              <td>50</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Retaliate">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM67</td>
+              <td>Retaliate</td>
+              <td>Ghost</td>
+              <td>Physical</td>
+              <td>70</td>
+              <td>100%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Giga-Impact">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM68</td>
+              <td>Giga Impact</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>150</td>
+              <td>90%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Flash">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM70</td>
+              <td>Flash</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Stone-Edge">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/d/d7/Bag_TM_Rock_Sprite.png"
+                />
+              </td>
+              <td>TM71</td>
+              <td>Stone Edge</td>
+              <td>Rock</td>
+              <td>Physical</td>
+              <td>100</td>
+              <td>80%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Thunder-Wave">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/5/57/Bag_TM_Electric_Sprite.png"
+                />
+              </td>
+              <td>TM73</td>
+              <td>Thunder Wave</td>
+              <td>Electric</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Psych-Up">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM77</td>
+              <td>Psych Up</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Work-Up">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM83</td>
+              <td>Work Up</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>30</td>
+            </tr>
+            <tr id="Dream-Eater">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM85</td>
+              <td>Dream Eater</td>
+              <td>Psychic</td>
+              <td>Special</td>
+              <td>100</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Grass-Knot">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/35/Bag_TM_Grass_Sprite.png"
+                />
+              </td>
+              <td>TM86</td>
+              <td>Grass Knot</td>
+              <td>Grass</td>
+              <td>Special</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Swagger">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM87</td>
+              <td>Swagger</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>90%</td>
+              <td>15</td>
+            </tr>
+            <tr id="U-turn">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/1/10/Bag_TM_Bug_Sprite.png"
+                />
+              </td>
+              <td>TM89</td>
+              <td>U-turn</td>
+              <td>Bug</td>
+              <td>Physical</td>
+              <td>70</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Substitute">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM90</td>
+              <td>Substitute</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Trick-Room">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM92</td>
+              <td>Trick Room</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Rock-Smash">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/6/64/Bag_TM_Fighting_Sprite.png"
+                />
+              </td>
+              <td>TM94</td>
+              <td>Rock Smash</td>
+              <td>Rock</td>
+              <td>Physical</td>
+              <td>40</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Strength">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/0/0c/Bag_HM_Normal_Sprite.png"
+                />
+              </td>
+              <td>HM05</td>
+              <td>Strength</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+      </section>
+    </section>
+    <script>
+      function toggle_navbar() {
+        document
+          .querySelector(".navbarcontents")
+          .classList.toggle("navbarcontents_visible");
+      }
+    </script>
+  </body>
+</html>

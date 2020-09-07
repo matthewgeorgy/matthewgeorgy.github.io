@@ -1,0 +1,53 @@
+(WAILMER) & (WAILORD)
+splash
+growl
+water gun
+rollout 
+whirlpool
+astonish
+water pulse
+mist
+rest
+brine
+water spout
+amnesia
+dive
+bounce 
+hydro pump
+heavy slam
+
+(HAXORUS)
+scratch 
+leer
+assurance
+dragon rage
+dual chop
+scary face
+slash 
+false swipe
+dragon claw
+dragon dance
+taunt
+dragon pulse
+swords dance
+guillotine 
+outrage 
+giga impact
+
+(MELOETTA)
+round
+quick attack
+confusion
+sing
+teeter dance 
+acrobatics
+psybeam 
+echoed voice
+u-turn
+wakeup slap
+psychic
+hyper voice
+role play
+close combat 
+perish song
+

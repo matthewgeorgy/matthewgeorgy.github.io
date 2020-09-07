@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* Nav Bar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  background-color: #e8e8e8;
+  border: 1px solid #ff0000;
+  z-index: 2;
+  opacity: 1;
+}
+
+.navbartoggle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.navbarcontents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  width: 0px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 100px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.navbarcontents_visible {
+  width: 1280px;
+  opacity: 1;
+}
+
+.navbar_link {
+  color: black;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  margin: auto;
+  transition: 0.2s;
+}
+
+.navbar_link:hover {
+  background-color: lightgray;
+}
+
+.navbar_link:active {
+  background-color: grey;
+}
+
+hr {
+  border-top: 1px solid #ff0000;
+}
+
+#Description {
+  font-size: 20px;
+}
+
+.heading {
+  font-size: 28px;
+}
+
+.Name {
+  font-size: 40px;
+}
+
+.main {
+  background-image: url("../../resources/background.png");
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main2 {
+  animation: fadeInAnimation linear 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: relative;
+  top: 60px;
+  background-color: white;
+  width: 1280px;
+  border: 4px groove #ff0000;
+  border-radius: 15px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Contents Table*/
+.Contents {
+  height: 170px;
+  width: 200px;
+  border: 3px solid black;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #e8e8e8;
+}
+
+.Contents h3 {
+  padding-left: 50px;
+}
+
+/*Info Container & Sprites*/
+.Info-Container {
+  float: right;
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 550px;
+  padding: 10px 10px;
+  margin-left: 20px;
+  background-color: #e8e8e8;
+}
+
+/*Sprites & Cry*/
+#sprite {
+  height: 200px;
+  width: 200px;
+  border: 2px groove #6890f0;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#s-sprite {
+  height: 200px;
+  width: 200px;
+  border: 2px groove #6890f0;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#Cry {
+  display: block;
+  margin: auto;
+}
+
+/*Abilities & Type Matchups*/
+.Abilities ul {
+  border-radius: 20px;
+  background-color: white;
+}
+
+.Type-Matchups p {
+  padding-left: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+/*Base Stats Table*/
+.Base-Stats {
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.Base-Stats th {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 0px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.Base-Stats td {
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+td.lvl {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+td.hp {
+  background-color: hsl(0, 100%, 65%);
+  border-radius: 5px;
+}
+td.atk {
+  background-color: orange;
+  border-radius: 5px;
+}
+td.def {
+  background-color: yellow;
+  border-radius: 5px;
+}
+td.sp-atk {
+  background-color: limegreen;
+  border-radius: 5px;
+}
+td.sp-def {
+  background-color: dodgerblue;
+  border-radius: 5px;
+}
+td.spe {
+  background-color: purple;
+  border-radius: 5px;
+}
+td.tot {
+  background-color: beige;
+  border-radius: 5px;
+}
+
+/*Dex entry and game location*/
+.black {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  text-align: center;
+  width: 80px;
+}
+
+.white {
+  color: black;
+  background-color: rgb(220, 220, 220);
+  border-radius: 15px;
+  text-align: center;
+  width: 80px;
+}
+
+.entryDE {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 10px;
+  font-style: italic;
+  width: 550px;
+}
+
+.entryGL {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 10px;
+  width: 550px;
+}
+
+/*Learnset*/
+#Learnset-LVL {
+  width: 600px;
+  border: 1px solid black;
+  float: left;
+  background-color: #6890f0;
+  border-radius: 5px;
+}
+
+#Learnset-LVL th {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #e8e8e8;
+  color: black;
+  border: 1px double black;
+  border-radius: 5px;
+}
+
+#Learnset-LVL td {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/*TM / HM*/
+#Learnset-TMHM {
+  position: relative;
+  top: 10px;
+  width: 600px;
+  border: 1px solid black;
+  margin-left: 630px;
+  background-color: #6890f0;
+  border-radius: 5px;
+}
+
+#Learnset-TMHM th {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #e8e8e8;
+  color: black;
+  border: 1px double black;
+  border-radius: 5px;
+}
+
+#Learnset-TMHM td {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/*Type Colors*/
+.Bug {
+  color: #a8b820;
+}
+.Dark {
+  color: #705848;
+}
+.Dragon {
+  color: #7038f8;
+}
+.Electric {
+  color: #f8d030;
+}
+.Fighting {
+  color: #c03028;
+}
+.Fire {
+  color: #f08030;
+}
+.Flying {
+  color: #a890f0;
+}
+.Ghost {
+  color: #705898;
+}
+.Grass {
+  color: #78c850;
+}
+.Ground {
+  color: #e0c068;
+}
+.Ice {
+  color: #98d8d8;
+}
+.Normal {
+  color: #a8a878;
+}
+.Poison {
+  color: #a040a0;
+}
+.Psychic {
+  color: #f85888;
+}
+.Rock {
+  color: #b8a038;
+}
+.Steel {
+  color: #b8b8d0;
+}
+.Water {
+  color: #6890f0;
+}

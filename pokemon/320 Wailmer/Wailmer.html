@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wailmer</title>
+    <link href="./Wailmer.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="main">
+    <div class="navbar">
+      <button class="navbartoggle" onclick="toggle_navbar()">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbarcontents">
+        <a href="../../home/home.html" class="navbar_link">Home</a>
+        <a href="../../pokemon list/pokemon.html" class="navbar_link"
+          >Pokemon</a
+        >
+        <a href="../../moves/moves.html" class="navbar_link">Moves</a>
+        <a href="../../types/types.html" class="navbar_link">Types</a>
+        <a href="../../about/about.html" class="navbar_link">About</a>
+      </div>
+    </div>
+    <section class="main2">
+      <h1 class="Name">Wailmer (#320)</h1>
+
+      <section class="Contents">
+        <h3>Contents</h3>
+        <ol>
+          <li>Introduction</li>
+          <li>Pokedex Entry</li>
+          <li>Game Locations</li>
+          <li>Learnset</li>
+        </ol>
+      </section>
+
+      <section class="Info-Container">
+        <figure class="sprites">
+          <img id="sprite" src="../../resources/wailmer.png" />
+          <img id="s-sprite" src="../../resources/wailmer_s.png" />
+
+          <audio id="Cry" controls>
+            <source src="https://veekun.com/dex/media/pokemon/cries/320.ogg" />
+          </audio>
+        </figure>
+        <hr />
+        <div class="Abilities">
+          <h3>Abilities</h3>
+          <ul>
+            <li><i>Water Veil</i> or <i>Oblivious</i></li>
+            <li><i>Pressure</i> (Hidden Ability)</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="Type-Matchups">
+          <h4>Type Matchups</h4>
+          <p>
+            <b>Weaknesses</b>: <span class="Grass">Grass</span> (2x),
+            <span class="Electric">Electric</span> (2x)
+            <br />
+            <b>Resistances</b>: <span class="Fire">Fire</span> (½x),
+            <span class="Ice">Ice</span> (½x),
+            <span class="Steel">Steel</span> (½x),
+            <span class="Water">Water</span> (½x)
+          </p>
+        </div>
+        <hr />
+        <h3>Base Stats</h3>
+        <table class="Base-Stats">
+          <thead>
+            <tr>
+              <th>LVL</th>
+              <th>HP</th>
+              <th>Attack</th>
+              <th>Defense</th>
+              <th>Sp. Atk</th>
+              <th>Sp. Def</th>
+              <th>Speed</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="LVL0">
+              <td class="lvl">0</td>
+              <td class="hp">130</td>
+              <td class="atk">70</td>
+              <td class="def">35</td>
+              <td class="sp-atk">70</td>
+              <td class="sp-def">35</td>
+              <td class="spe">60</td>
+              <td class="tot">400</td>
+            </tr>
+            <tr id="LVL50">
+              <td class="lvl">50</td>
+              <td class="hp">190-237</td>
+              <td class="atk">67-134</td>
+              <td class="def">36-95</td>
+              <td class="sp-atk">67-134</td>
+              <td class="sp-def">36-95</td>
+              <td class="spe">58-123</td>
+              <td class="tot">400</td>
+            </tr>
+            <tr id="LVL100">
+              <td class="lvl">100</td>
+              <td class="hp">370-464</td>
+              <td class="atk">130-262</td>
+              <td class="def">67-185</td>
+              <td class="sp-atk">130-262</td>
+              <td class="sp-def">67-185</td>
+              <td class="spe">112-240</td>
+              <td class="tot">400</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="Intro">
+        <p id="Description">
+          Wailmer is a <span class="Water">Water</span>-Type Pokemon introduced
+          in Generation III.
+          <br />
+          It evolves into
+          <a href="../321 Wailord/Wailord.html">Wailord</a> starting at Level
+          40.
+        </p>
+        <hr />
+      </section>
+
+      <section class="body">
+        <section id="Pokedex-Entry">
+          <h1 class="heading">Pokédex Entry</h1>
+
+          <table class="Dex-Entry">
+            <tbody>
+              <tr>
+                <td class="black">Black</td>
+                <td class="entryDE" rowspan="2">
+                  On sunny days, it lands on beaches to bounce like a ball and
+                  play. It spouts water from its nose.
+                </td>
+              </tr>
+              <tr>
+                <td class="white">White</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="black">Black 2</td>
+                <td class="entryDE" rowspan="2">
+                  It eats one ton of food every day. It plays by shooting stored
+                  seawater out its blowholes with great force.
+                </td>
+              </tr>
+              <tr>
+                <td class="white">White 2</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+        </section>
+
+        <section id="Game-Locations">
+          <h2 class="heading">Game Locations</h2>
+
+          <table class="Game-Locations">
+            <tbody>
+              <tr>
+                <td class="black">Black</td>
+                <td class="entryGL" rowspan="2">
+                  Undella Town, Undella Bay (Surfing in rippling water)
+                </td>
+              </tr>
+              <tr>
+                <td class="white">White</td>
+              </tr>
+              <tr>
+                <td class="black">Black 2</td>
+                <td class="entryGL" rowspan="2">
+                  Undella Bay (Surfing in rippling water)
+                </td>
+              </tr>
+              <tr>
+                <td class="white">White 2</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+        </section>
+      </section>
+
+      <section id="Learnset">
+        <h2 class="heading">Learnset</h2>
+
+        <table id="Learnset-LVL">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Move</th>
+              <th>Type</th>
+              <th>Cat.</th>
+              <th>Pwr.</th>
+              <th>Acc.</th>
+              <th>PP</th>
+            </tr>
+          </thead>
+          <tbody id="MovesLVL">
+            <tr id="Splash">
+              <td>1</td>
+              <td>Splash</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>40</td>
+            </tr>
+            <tr id="Growl">
+              <td>4</td>
+              <td>Growl</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>40</td>
+            </tr>
+            <tr id="Water-Gun">
+              <td>7</td>
+              <td>Water Gun</td>
+              <td>Water</td>
+              <td>Special</td>
+              <td>40</td>
+              <td>100%</td>
+              <td>25</td>
+            </tr>
+            <tr id="Rollout">
+              <td>11</td>
+              <td>Rollout</td>
+              <td>Rock</td>
+              <td>Physical</td>
+              <td>30</td>
+              <td>90%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Whirlpool">
+              <td>14</td>
+              <td>Whirlpool</td>
+              <td>Water</td>
+              <td>Special</td>
+              <td>35</td>
+              <td>85%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Astonish">
+              <td>17</td>
+              <td>Astonish</td>
+              <td>Ghost</td>
+              <td>Physical</td>
+              <td>30</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Water-Pulse">
+              <td>21</td>
+              <td>Water Pulse</td>
+              <td>Water</td>
+              <td>Special</td>
+              <td>60</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Mist">
+              <td>24</td>
+              <td>Mist</td>
+              <td>Ice</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>30</td>
+            </tr>
+            <tr id="Rest">
+              <td>27</td>
+              <td>Rest</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Brine">
+              <td>31</td>
+              <td>Brine</td>
+              <td>Water</td>
+              <td>Special</td>
+              <td>65</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Water-Spout">
+              <td>34</td>
+              <td>Water Spout</td>
+              <td>Water</td>
+              <td>Special</td>
+              <td>150</td>
+              <td>100%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Amnesia">
+              <td>37</td>
+              <td>Amnesia</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Dive">
+              <td>41</td>
+              <td>Dive</td>
+              <td>Water</td>
+              <td>Physical</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Bounce">
+              <td>44</td>
+              <td>Bounce</td>
+              <td>Flying</td>
+              <td>Physical</td>
+              <td>85</td>
+              <td>85%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Hydro-Pump">
+              <td>47</td>
+              <td>Hydro Pump</td>
+              <td>Water</td>
+              <td>Special</td>
+              <td>120</td>
+              <td>80%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Heavy-Slam">
+              <td>50</td>
+              <td>Heavy Slam</td>
+              <td>Steel</td>
+              <td>Physical</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="Learnset-TMHM">
+          <thead>
+            <tr>
+              <th></th>
+              <th>TM</th>
+              <th>Move</th>
+              <th>Type</th>
+              <th>Cat.</th>
+              <th>Pwr.</th>
+              <th>Acc.</th>
+              <th>PP</th>
+            </tr>
+          </thead>
+          <tbody id="MovesTM/HM">
+            <tr id="Roar">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM05</td>
+              <td>Roar</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Toxic">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/3/38/Bag_TM_Poison_Sprite.png"
+                />
+              </td>
+              <td>TM06</td>
+              <td>Toxic</td>
+              <td>Poison</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>90%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Hail">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/d/df/Bag_TM_Ice_Sprite.png"
+                />
+              </td>
+              <td>TM07</td>
+              <td>Hail</td>
+              <td>Ice</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Hidden-Power">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM10</td>
+              <td>Hidden Power</td>
+              <td>???</td>
+              <td>Special</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Ice-Beam">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/d/df/Bag_TM_Ice_Sprite.png"
+                />
+              </td>
+              <td>TM13</td>
+              <td>Ice Beam</td>
+              <td>Ice</td>
+              <td>Special</td>
+              <td>95</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Blizzard">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/d/df/Bag_TM_Ice_Sprite.png"
+                />
+              </td>
+              <td>TM14</td>
+              <td>Blizzard</td>
+              <td>Ice</td>
+              <td>Special</td>
+              <td>120</td>
+              <td>70%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Protect">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM17</td>
+              <td>Protect</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Rain-Dance">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/f/f8/Bag_TM_Water_Sprite.png"
+                />
+              </td>
+              <td>TM18</td>
+              <td>Rain Dance</td>
+              <td>Water</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>5</td>
+            </tr>
+            <tr id="Frustration">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM21</td>
+              <td>Frustration</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Earthquake">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/b/b8/Bag_TM_Ground_Sprite.png"
+                />
+              </td>
+              <td>TM26</td>
+              <td>Earthquake</td>
+              <td>Ground</td>
+              <td>Physical</td>
+              <td>100</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Return">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM27</td>
+              <td>Return</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Double-Team">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM32</td>
+              <td>Double Team</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Rock-Tomb">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/d/d7/Bag_TM_Rock_Sprite.png"
+                />
+              </td>
+              <td>TM39</td>
+              <td>Rock Tomb</td>
+              <td>Rock</td>
+              <td>Physical</td>
+              <td>50</td>
+              <td>80%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Facade">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM42</td>
+              <td>Facade</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>70</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="RestTM/HM">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/8/83/Bag_TM_Psychic_Sprite.png"
+                />
+              </td>
+              <td>TM44</td>
+              <td>Rest</td>
+              <td>Psychic</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Attract">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM45</td>
+              <td>Attract</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Round">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM48</td>
+              <td>Round</td>
+              <td>Normal</td>
+              <td>Special</td>
+              <td>60</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Echoed-Voice">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM49</td>
+              <td>Echoed Voice</td>
+              <td>Water</td>
+              <td>Status</td>
+              <td>40</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Scald">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/f/f8/Bag_TM_Water_Sprite.png"
+                />
+              </td>
+              <td>TM55</td>
+              <td>Scald</td>
+              <td>Water</td>
+              <td>Special</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Bulldoze">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/b/b8/Bag_TM_Ground_Sprite.png"
+                />
+              </td>
+              <td>TM78</td>
+              <td>Bulldoze</td>
+              <td>Ground</td>
+              <td>Physical</td>
+              <td>60</td>
+              <td>100%</td>
+              <td>20</td>
+            </tr>
+            <tr id="Swagger">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM87</td>
+              <td>Swagger</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>90%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Substitute">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/9/9a/Bag_TM_Normal_Sprite.png"
+                />
+              </td>
+              <td>TM90</td>
+              <td>Substitute</td>
+              <td>Normal</td>
+              <td>Status</td>
+              <td>--</td>
+              <td>--%</td>
+              <td>10</td>
+            </tr>
+            <tr id="Rock-Smash">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/6/64/Bag_TM_Fighting_Sprite.png"
+                />
+              </td>
+              <td>TM94</td>
+              <td>Rock Smash</td>
+              <td>Rock</td>
+              <td>Physical</td>
+              <td>40</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Surf">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/1/16/Bag_HM_Water_Sprite.png"
+                />
+              </td>
+              <td>HM03</td>
+              <td>Surf</td>
+              <td>Water</td>
+              <td>Status</td>
+              <td>95</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Strength">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/0/0c/Bag_HM_Normal_Sprite.png"
+                />
+              </td>
+              <td>HM04</td>
+              <td>Strength</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="Waterfall">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/1/16/Bag_HM_Water_Sprite.png"
+                />
+              </td>
+              <td>HM05</td>
+              <td>Waterfall</td>
+              <td>Normal</td>
+              <td>Physical</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>15</td>
+            </tr>
+            <tr id="DiveTM/HM">
+              <td>
+                <img
+                  src="https://cdn.bulbagarden.net/upload/1/16/Bag_HM_Water_Sprite.png"
+                />
+              </td>
+              <td>HM06</td>
+              <td>Dive</td>
+              <td>Water</td>
+              <td>Physical</td>
+              <td>80</td>
+              <td>100%</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+      </section>
+    </section>
+    <script>
+      function toggle_navbar() {
+        document
+          .querySelector(".navbarcontents")
+          .classList.toggle("navbarcontents_visible");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <link href="./about.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <button class="navbartoggle" onclick="toggle_navbar()">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbarcontents">
+        <a href="../index.html" class="navbar_link">Home</a>
+        <a href="../pokemon list/pokemon.html" class="navbar_link">Pokemon</a>
+        <a href="../moves/moves.html" class="navbar_link">Moves</a>
+        <a href="../types/types.html" class="navbar_link">Types</a>
+        <a href="./about.html" class="navbar_link">About</a>
+      </div>
+    </div>
+    <section class="main">
+      <div class="heading">
+        <h1>About</h1>
+        <p>
+          On this page you can find some information about me, this project, and
+          how it was developed!
+        </p>
+      </div>
+      <hr />
+      <h3>Me</h3>
+      <div class="me-container">
+        <div class="me">
+          <p>
+            As you probably know by now, my name is Matthew Georgy.
+            <br />
+            I am currently attending the University of Waterloo, studying
+            Electrical Engineering.
+            <br />
+            I'm very passionate about computers, computer hardware,
+            <br />
+            electronics, and technology in general!
+            <br />
+            <br />
+            I've listed some contact information on the side in case you want to
+            get in touch with me.
+          </p>
+        </div>
+        <div class="contact-info">
+          <h2>Contact Info</h2>
+          <p>
+            <b>Github</b>:
+            <a href="https://www.github.com/matthewgeorgy"
+              >github.com/matthewgeorgy</a
+            >
+            <br />
+            <b>Email</b>: matthewgeorgy61@gmail.com
+            <br />
+            <b>Discord</b>: flyingV #5972
+          </p>
+        </div>
+      </div>
+      <hr />
+      <h3>The Project</h3>
+      <div class="project">
+        <p>
+          I originally started this project as a way to practice and improve my
+          skills in HTML & CSS.
+          <br />
+          I had an idea in mind for how I wanted this site to look - and I stuck
+          to it for the most part -
+          <br />
+          but of course made some changes along the way.
+          <br />
+          <br />
+          This was mainly made possible thanks to my background in design.
+          <br />
+          I took Technological Design courses in Grades 11 & 12 in High School -
+          where I learned the principles
+          <br />
+          of design and methodologies behind it - as well as being a member of
+          my High School's FIRST Robotics Team -
+          <br />
+          where I was a part of the design team (the members responsible for
+          designing the robot).
+          <br />
+          <br />
+          As time went on, and this project started gaining more complexity, I
+          recognized its potential as a project for my resume.
+          <br />
+          Thus, I decided to use this project as a way of showcasing BOTH my
+          HTML / CSS skills, AND my design capabilities.
+        </p>
+      </div>
+      <div class="project">
+        <p>
+          The main source for this project was Bulbapedia, which is one of the
+          largest - perhaps even the largest -
+          <br />
+          Pokemon encyclopedias on the Internet .
+          <br />
+          As stated on the home page, the information on this site is entirely
+          specific to Generation 5.
+          <br />
+          Bulbapedia is an amazing source for information on all things related
+          to Pokemon, so I highly suggest that
+          <br />
+          you go there if you wish to learn more!
+        </p>
+      </div>
+    </section>
+    <script>
+      function toggle_navbar() {
+        document
+          .querySelector(".navbarcontents")
+          .classList.toggle("navbarcontents_visible");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Types</title>
+    <link href="./types.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <button class="navbartoggle" onclick="toggle_navbar()">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbarcontents">
+        <a href="../index.html" class="navbar_link">Home</a>
+        <a href="../pokemon list/pokemon.html" class="navbar_link">Pokemon</a>
+        <a href="../moves/moves.html" class="navbar_link">Moves</a>
+        <a href="./types.html" class="navbar_link">Types</a>
+        <a href="../about/about.html" class="navbar_link">About</a>
+      </div>
+    </div>
+    <section class="main">
+      <h1>Types</h1>
+      <p>
+        Below is a chart illustrating the type matchups and effectiveness.
+        <br />
+        The vertical type is the attacking type, the horizontal type is the
+        defending type.
+      </p>
+      <hr />
+      <h3>Type Chart</h3>
+
+      <figure class="typechart">
+        <img src="../resources/typechart.png" />
+      </figure>
+      <p class="type_multipl">
+        Although not shown in this chart, type matchups also multiply together:
+        <br />
+        <br />
+        For example, <span class="Rock">Rock</span> is 2x effective against
+        <span class="Ice">Ice</span>
+        or <span class="Flying">Flying</span>. Thus, it would be 4x effective
+        against a Pokemon that is both <span class="Ice">Ice</span> and
+        <span class="Flying">Flying</span> Type.
+        <br />
+        <br />
+        Furthermore, <span class="Grass">Grass</span> is ½x effective against
+        <span class="Fire">Fire</span> or
+        <span class="Dragon">Dragon</span> Thus, it would be ¼× effective
+        against a Pokemon that is both <span class="Fire">Fire</span> and
+        <span class="Dragon">Dragon</span> Type.
+        <br />
+        <br />
+        Finally, <span class="Grass">Grass</span> is 2x effective against
+        <span class="Water">Water</span> and ½x effective against
+        <span class="Flying">Flying</span>. Thus, it would be 1x effective (or
+        normally effective) against a Pokemon that is both
+        <span class="Water">Water</span> and
+        <span class="Flying">Flying</span> Type.
+      </p>
+    </section>
+    <script>
+      function toggle_navbar() {
+        document
+          .querySelector(".navbarcontents")
+          .classList.toggle("navbarcontents_visible");
+      }
+    </script>
+  </body>
+</html>

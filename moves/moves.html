@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moves List</title>
+    <link href="./moves.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <button class="navbartoggle" onclick="toggle_navbar()">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbarcontents">
+        <a href="../index.html" class="navbar_link">Home</a>
+        <a href="../pokemon list/pokemon.html" class="navbar_link">Pokemon</a>
+        <a href="./moves.html" class="navbar_link">Moves</a>
+        <a href="../types/types.html" class="navbar_link">Types</a>
+        <a href="../about/about.html" class="navbar_link">About</a>
+      </div>
+    </div>
+    <section class="main">
+      <h1>Moves List</h1>
+      <div class="heading">
+        <p>Below is a list of all moves on this site</p>
+        <p>
+          Simply type in the name of the move, click on the name, and you will
+          be redirected to the move's info page on Bulbapedia.
+        </p>
+      </div>
+      <hr />
+      <div class="list_container">
+        <div class="moves_list_tmhm">
+          <input
+            id="searchbar_tmhm"
+            onkeyup="search_move_tmhm()"
+            type="text"
+            name="search"
+            placeholder="Search by TM/HM #..."
+          />
+          <ul id="list_tmhm">
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Hone_Claws_(move)">TM01 -- Hone Claws</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dragon_Claw_(move)">TM02 -- Dragon Claw</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Psyshock_(move)">TM03 -- Psyshock</a> </li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Calm_Mind_(move)">TM04 -- Calm Mind</li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Roar_(move)">TM05 -- Roar</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Toxic_(move)">TM06 -- Toxic</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Hail_(move)">TM07 -- Hail</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Bulk_Up_(move)">TM08 -- Bulk Up</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Venoshock_(move)">TM09 -- Venoshock</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Hidden_Power_(move)">TM10 -- Hidden Power</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Sunny_Day_(move)">TM11 -- Sunny Day</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Taunt_(move)">TM12 -- Taunt</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Ice_Beam_(move)">TM13 -- Ice Beam</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Blizzard_(move)">TM14 -- Blizzard</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Hyper_Beam_(move)">TM15 -- Hyper Beam</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Light_Screen_(move)">TM16 -- Light Screen</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Protect_(move)">TM17 -- Protect</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Rain_Dance_(move)">TM18 -- Rain Dance</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Telekinesis_(move)">TM19 -- Telekinesis</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Safeguard_(move)">TM20 -- Safeguard</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Frustration_(move)">TM21 -- Frustration</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Solar_Beam_(move)">TM22 -- Solar Beam</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Smack_Down_(move)">TM23 -- Smack Down</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Thunderbolt_(move)">TM24 -- Thunderbolt</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Thunder_(move)">TM25 -- Thunder</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Earthquake_(move)">TM26 -- Earthquake</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Return_(move)">TM27 -- Return</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dig_(move)">TM28 -- Dig</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Psychic_(move)">TM29 -- Psychic</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Shadow_Ball_(move)">TM30 -- Shadow Ball</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Brick_Break_(move)">TM31 -- Brick Break</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Double_Team_(move)">TM32 -- Double Team</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Reflect_(move)">TM33 -- Reflect</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Sludge_Wave_(move)">TM34 -- Sludge Wave</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Flamethrower_(move)">TM35 -- Flamethrower</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Sludge_Bomb_(move)">TM36 -- Sludge Bomb</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Sandstorm_(move)">TM37 -- Sandstorm</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Fire_Blast_(move)">TM38 -- Fire Blast</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Rock_Tomb_(move)">TM39 -- Rock Tomb</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Aerial_Ace_(move)">TM40 -- Aerial Ace</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Torment_(move)">TM41 -- Torment</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Facade_(move)">TM42 -- Facade</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Flame_Charge_(move)">TM43 -- Flame Charge</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Rest_(move)">TM44 -- Rest</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Attract_(move)">TM45 -- Attract</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Thief_(move)">TM46 -- Thief</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Low_Sweep_(move)">TM47 -- Low Sweep</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Round_(move)">TM48 -- Round</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Echoed_Voice_(move)">TM49 -- Echoed Voice</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Overheat_(move)">TM50 -- Overheat</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Ally_Switch_(move)">TM51 -- Ally Switch</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Focus_Blast_(move)">TM52 -- Focus Blast</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Energy_Ball_(move)">TM53 -- Energy Ball</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/False_Swipe_(move)">TM54 -- False Swipe</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Scald_(move)">TM55 -- Scald</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Fling_(move)">TM56 -- Fling</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Charge_Beam_(move)">TM57 -- Charge Beam</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Incinerate_(move)">TM59 -- Incinerate</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Acrobatics_(move)">TM62 -- Acrobatics</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Embargo_(move)">TM63 -- Embargo</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Shadow_Claw_(move)">TM65 -- Shadow Claw</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Payback_(move)">TM66 -- Payback</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Retaliate_(move)">TM67 -- Retaliate</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Giga_Impact_(move)">TM68 -- Giga Impact</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Flash_(move)">TM70 -- Flash</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Stone_Edge_(move)">TM71 -- Stone Edge</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Thunder_Wave_(move)">TM73 -- Thunder Wave</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Swords_Dance_(move)">TM75 -- Swords Dance</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Psych_Up_(move)">TM77 -- Psych Up</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Bulldoze_(move)">TM78 -- Bulldoze</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Rock_Slide_(move)">TM80 -- Rock Slide</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/X-Scissor_(move)">TM81 -- X-Scissor</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dragon_Tail_(move)">TM82 -- Dragon Tail</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Work_Up_(move)">TM83 -- Work Up</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Poison_Jab_(move)">TM84 -- Poison Jab</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dream_Eater_(move)">TM85 -- Dream Eater</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Grass_Knot_(move)">TM86 -- Grass Knot</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Swagger_(move)">TM87 -- Swagger</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/U-Turn_(move)">TM89 -- U-Turn</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Substitute_(move)">TM90 -- Substitute</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Trick_Room_(move)">TM92 -- Trick Room</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Rock_Smash_(move)">TM94 -- Rock smash</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Cut_(move)">HM01 -- Cut</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Surf_(move)">HM03 -- Surf</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Strength_(move)">HM04 -- Strength</a></li>
+            <li class="tmhm"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dive_(move)">HM06 -- Dive</a></li>
+          </ul>
+        </div>
+        <div class="moves_list_learn">
+          <input
+            id="searchbar_learn"
+            onkeyup="search_move_learn()"
+            type="text"
+            name="search"
+            placeholder="Search by name..."
+          />
+          <ul id="list_learn">
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Splash_(move)">Splash</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Growl_(move)">Growl</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Water_Gun_(move)">Water Gun</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Rollout_(move)">Rollout</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Whirlpool_(move)">Whirlpool</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Astonish_(move)">Astonish</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Water_Pulse_(move)">Water Pulse</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Mist_(move)">Mist</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Rest_(move)">Rest</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Brine_(move)">Brine</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Water_Spout_(move)">Water Spout</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Amnesia_(move)">Amnesia</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dive_(move)">Dive</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Bounce_(move)">Bounce</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Hydro_Pump_(move)">Hydro Pump</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Heavy_Slam_(move)">Heavy Slam</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Scratch_(move)">Scratch</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Leer_(move)">Leer</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Assurance_(move)">Assurance</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dragon_Rage_(move)">Dragon Rage</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dual_Chop_(move)">Dual Chop</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Scary_Face_(move)">Scary Face</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Slash_(move)">Slash</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/False_Swipe_(move)">False Swipe</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dragon_Claw_(move)">Dragon Claw</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dragon_Dance_(move)">Dragon Dance</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Taunt_(move)">Taunt</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Dragon_Pulse_(move)">Dragon Pulse</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Swords_Dance_(move)">Swords Dance</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Guillotine_(move)">Guillotine</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Outrage_(move)">Outrage</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Giga_Impact_(move)">Giga Impact</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Round_(move)">Round</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Quick_Attack_(move)">Quick Attack</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Confusion_(move)">Confusion</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Sing_(move)">Sing</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Teeter_Dance_(move)">Teeter Dance</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Acrobatics_(move)">Acrobatics</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Psybeam_(move)">Psybeam</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Echoed_Voice_(move)">Echoed Voice</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/U-turn_(move)">U_Turn</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Wake-Up_Slap_(move)">Wake-Up Slap</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Psychic_(move)">Psychic</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Hyper_Voice_(move)">Hyper Voice</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Role_Play_(move)">Role Play</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Close_Combat_(move)">Close Combat</a></li>
+            <li class="learn"> <a href="https://bulbapedia.bulbagarden.net/wiki/Perish_Song_(move)">Perish Song</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </section>
+    <script src="./move_search.js"></script>
+  </body>
+</html>
